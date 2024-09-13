@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../styles/ToDoList.css";
 
 function ToDoList() {
     const [tasks, setTasks] = useState([]);
@@ -27,7 +28,7 @@ function ToDoList() {
                 <input
                     className="add-task-text"
                     type="text"
-                    placeholder="Enter the name of the task to add"
+                    placeholder="Enter the name of the task"
                     value={newTask}
                     onChange={handleInputChange}
                 />

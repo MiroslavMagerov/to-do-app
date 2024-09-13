@@ -1,11 +1,14 @@
-import "./App.css";
+import "./styles/App.css";
 import ToDoList from "./components/ToDoList";
 
 function App() {
     return (
-        <>
-            <ToDoList></ToDoList>
-        </>
+        <div className="app">
+            <div className="content">
+                <ToDoList></ToDoList>
+            </div>
+            <footer>Miroslav Magerov © 2024</footer>
+        </div>
     );
 }
 
