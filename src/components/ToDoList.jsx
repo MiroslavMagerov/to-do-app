@@ -37,9 +37,9 @@ function ToDoList() {
                 </button>
             </div>
 
-            <ol>
+            <ol className="task-list">
                 {tasks.map((task, index) => (
-                    <li key={index}>
+                    <li key={index} className="task-item">
                         <span className="task-name">{task}</span>
 
                         <button
